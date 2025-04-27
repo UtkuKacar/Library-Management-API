@@ -12,8 +12,6 @@ Swagger UI: http://localhost:5163/swagger/index.html
 
 SQL Server LocalDB (installed with Visual Studio) or any SQL Server instance
 
-Optional: Postman or curl for testing
-
 🚀 Setup & Run
 
 Clone the repository
