@@ -5,10 +5,8 @@ namespace LibraryManagementAPI.Data
 {
     public class LibraryContext : DbContext
     {
-        // 1) Parameterless ctor ekliyoruz:
         public LibraryContext() { }
 
-        // 2) Varsayılan ctor
         public LibraryContext(DbContextOptions<LibraryContext> options)
             : base(options) { }
 
@@ -17,7 +15,6 @@ namespace LibraryManagementAPI.Data
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            // Eğer DI ile konfigürasyon gelmemişse, buradan fallback bağlantıyı sağlayalım:
             if (!optionsBuilder.IsConfigured)
             {
                 optionsBuilder.UseSqlServer(
