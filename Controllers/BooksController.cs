@@ -1,5 +1,5 @@
-using LibraryManagementAPI.Data;      // <<< DbContext’i içe aktarır
-using LibraryManagementAPI.Models;    // <<< Author/Book sınıflarını içe aktarır
+using LibraryManagementAPI.Data;
+using LibraryManagementAPI.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
