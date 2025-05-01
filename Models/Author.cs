@@ -22,7 +22,6 @@ namespace LibraryManagementAPI.Models
         [Required, DataType(DataType.Date)]
         public DateTime BirthDate { get; set; }
 
-        // navigation prop bind & JSON’tan çıkarıldı
         [BindNever]
         [JsonIgnore]
         public ICollection<Book> Books { get; set; }
