@@ -19,7 +19,6 @@ namespace LibraryManagementAPI.Models
         [Required]
         public int AuthorId { get; set; }
 
-        // navigation prop bind & JSON’tan çıkarıldı
         [BindNever]
         [JsonIgnore]
         public Author? Author { get; set; }
